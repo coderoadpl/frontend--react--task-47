@@ -1,13 +1,16 @@
 import React from 'react'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { faTrash } from '@fortawesome/free-solid-svg-icons'
+
+import trashIconSvg from './trash-solid.svg'
+import TrashIcon from './TrashIcon'
 
 export const App = () => {
   return (
     <div>
       <FontAwesomeIcon
-        icon={faCoffee}
+        icon={faTrash}
       />
 
       <svg
@@ -26,6 +29,15 @@ export const App = () => {
         >
         </path>
       </svg>
+
+      <TrashIcon />
+
+      <img
+        src={trashIconSvg}
+        alt={'trash-icon'}
+        width={16}
+        height={16}
+      />
 
       <p>
         These icons are form FontAwesome and published under{' '}
